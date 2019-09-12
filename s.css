@@ -178,3 +178,14 @@ p{
  border: none;
  transform: translateY(-10px);
 }
+
+/*  */
+.container-2{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Media Query */
+@@media (min-width:600px) {
+
+}
