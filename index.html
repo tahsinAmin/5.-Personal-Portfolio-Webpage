@@ -1,118 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="s.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Comfortaa|Righteous&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1b49d7e787.js"></script>
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Comfortaa|Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b49d7e787.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-  <body>
+
+<body>
+
     <nav id="navbar">
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        <div class="profile-links">
-          <a href="https://www.freecodecamp.org/fcc608db35e-e2e4-4dbb-b4d9-48c7ffcb6208" class="active" target="_blank"><img src="fcc.png" alt="" style="background-color: #c59f87;"></a>
-          <a href="https://github.com/tahsinAmin" class="active" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://www.facebook.com/tahsinamins" class="active" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="https://codepen.io/tahsin09" class="active" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div class="profile-links">
+                <a href="https://www.freecodecamp.org/fcc608db35e-e2e4-4dbb-b4d9-48c7ffcb6208" class="active" target="_blank"><img src="fcc.png" class="fcc" style="background-color: #c59f87;"></a>
+                <a href="https://github.com/tahsinAmin" class="active" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.facebook.com/tahsinamins" class="active" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://codepen.io/tahsin09" class="active" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#projects" class="link-words"><span class="links"><i class="fas fa-bolt fa-2x"></i></span>Projects</a>
+                <a href="#skills" class="link-words"><span class="links" style="padding-right: 14px;"><i class="fas fa-info fa-2x" ></i></span>Skills</a>
+                <a href="#about" class="link-words"><span class="links"><i class="fab fa-black-tie fa-2x"></i></span>About Me</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
         </div>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#projects" class="link-words"><span class="links"><i class="fas fa-bolt fa-2x"></i></span>Projects</a>
-          <a href="#skills" class="link-words"><span class="links" style="padding-right: 14px;"><i class="fas fa-info fa-2x" ></i></span>Skills</a>
-          <a href="#about" class="link-words"><span class="links"><i class="fab fa-black-tie fa-2x"></i></span>About</a>
+        <div class="bigNav">
+            <a href="#projects"><span class="links"><i class="fas fa-bolt fa-2x"></i></span>Projects</a>
+            <a href="#skills"><span class="links" style="padding-right: 14px;"><i class="fas fa-info fa-2x" ></i></span>Skills</a>
+            <a href="#about"><span class="links"><i class="fas fa-user-tie fa-2x"></i></span> About Me</a>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars fa-2x"></i>
-        </a>
-      </div>
     </nav>
 
-     <section id="welcome-section">
-       <div>
-         <h1><i>Front End Developer</i></h1>
-         <p style="padding-bottom: 15px;"><i>Tahsin Amin</i></p>
-       </div>
-     </section>
+    <section id="welcome-section">
+        <div>
+            <h1><i>Front End Developer</i></h1>
+            <p class="tahsin"><i>Tahsin Amin</i></p>
+        </div>
+    </section>
 
     <section id="projects">
-      <div><span><i class="fas fa-bolt fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
-      <h2>PROJECTS</h2>
-      <div class="grid-container">
+        <div><span><i class="fas fa-bolt fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
+        <h2>PROJECTS</h2>
+        <div class="grid-container">
 
-        <a href="https://codepen.io/tahsin09/full/ZVRYBG" target="_black"><div class="img a"></div></a>
-        <div></div>
-        <div>
-          <h3 class="project-title">Tribute Page</h3>
-          <h4 class="orange">freeCodeCamp</h4>
-          <p> This is one of the "Responsive Web Design" Projects in freeCodeCamp where I had to build a tribute page. A short story on A. P. J Abdul Kalam. Information retrieved from Wikipedia.</p>
-          <button class="btn">View Project</button>
-        </div>
-        <div></div>
+            <div class="container">
+                <div class="img a"><a href="https://codepen.io/tahsin09/full/ZVRYBG" target="_blank"></a></div>
+                <div class="content">
+                    <h3 class="project-title">Tribute Page</h3>
+                    <h4 class="orange">freeCodeCamp</h4>
+                    <p>A short story on A. P. J Abdul Kalam. Information retrieved from Wikipedia.</p>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
 
-        <a href="https://codepen.io/tahsin09/full/VqVYmw" target="_black"><div class="img b"></div></a>
-        <div></div>
-        <div>
-          <h3 class="project-title">Survey Form</h3>
-          <h4 class="orange">freeCodeCamp</h4>
-          <p> This is one of the "Responsive Web Design" Projects in freeCodeCamp where I had to build a Survey Form.</p>
-          <button class="btn">View Project</button>
-        </div>
-        <div></div>
+            <div class="container">
+                <div class="img b"><a href="https://codepen.io/tahsin09/full/VqVYmw" target="_blank"></a></div>
+                <div class="content">
+                    <h3 class="project-title">Survey Form</h3>
+                    <h4 class="orange">freeCodeCamp</h4>
+                    <p> A survey form Design for the "Responsive Web Design" Project.</p>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
 
-        <a href="https://codepen.io/tahsin09/full/zXLWOm" target="_black"><div class="img c"></div></a>
-        <div></div>
-        <div>
-          <h3 class="project-title"> Product Landing Page</h3>
-          <h4 class="orange">freeCodeCamp</h4>
-          <p> This is one of the "Responsive Web Design" Projects in freeCodeCamp where I had to build a Product Landing page. And I couldn't think of any other product other than my Ultrabook</p>
-          <button class="btn">View Project</button>
-        </div>
-        <div></div>
+            <div class="container">
+                <div class="img c"><a href="https://codepen.io/tahsin09/full/zXLWOm" target="_blank"></a></div>
+                <div class="content">
+                    <h3 class="project-title"> Product Landing Page</h3>
+                    <h4 class="orange">freeCodeCamp</h4>
+                    <p>A Product Landing Page for HP SpectreX360.</p>
+                    <button class="btn">View Project</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
 
-        <a href="https://codepen.io/tahsin09/full/axXKJo" target="_black"><div class="img d"></div></a>
-        <div></div>
-        <div>
-          <h3 class="project-title">Technical Documentation Page</h3>
-          <h4 class="orange">freeCodeCamp</h4>
-          <p> This is one of the "Responsive Web Design" Projects in freeCodeCamp where I had to build a Technical Documentation Page. I copied the design from CodeCademy.</p>
-          <button class="btn">View Project</button>
+            <div class="container">
+                <div class="img d"><a href="https://codepen.io/tahsin09/full/axXKJo" target="_blank"></a></div>
+                <div class="content">
+                    <h3 class="project-title">Technical Documentation Page</h3>
+                    <h4 class="orange">freeCodeCamp</h4>
+                    <p> A replication of CodeCademy.</p>
+                    <button class="btn">View Project</button>
+                </div>
+            </div>
         </div>
-        <div></div>
-      </div>
-      </div>
     </section>
 
     <section id="skills">
-      <div><span><i class="fas fa-info fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
-      <h2>SKILLS</h2>
+        <div><span><i class="fas fa-info fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
+        <h2>SKILLS</h2>
 
-      <div class="container-2">
-        <i class="fab fa-html5 fa-7x" style="color: white;"></i>
-        <i class="fab fa-css3 fa-7x" style="color: white;"></i>
-        <i class="fab fa-github fa-7x" style="color: white;"></i>
-        <i class="fas fa-database fa-7x" style="color: white;"></i>
-        <i class="fab fa-js-square fa-7x" style="color: white;"></i>
-      </div>
+        <div class="container-2a">
+            <i class="fab fa-html5 fa-7x" style="color: white;"></i>
+            <i class="fab fa-css3 fa-7x" style="color: white;"></i>
+            <i class="fab fa-github fa-7x" style="color: white;"></i>
+            <i class="fas fa-database fa-7x" style="color: white;"></i>
+            <i class="fab fa-js-square fa-7x" style="color: white;"></i>
+        </div>
     </section>
 
+    <section id="about">
+        <div><span><i class="fas fa-user-tie fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
+        <h2>About Me</h2>
+        <div class="info">
+            <img src="Photo77.jpg" alt="">
+            <p>Hi, my name is Tahsin.
+                I stay in Dhaka and currently attend BRAC University for finishing my Undergraduate program in Computer Science.
+                In my free time, I enjoy reading, playing basketball , and hanging out with friends.
+            </p>
+            <button class="btn">Contact Me</button>
 
-    <!-- <section id="about">
-      <div><span><i class="fab fa-black-tie fa-4x"></i></span><div class="line"></div></div>
-      <h2>ABOUT</h2>
-      <h4>Hello there! My name is Tahsin and I'm a Front End Developer</h4>
-      <p>I'm currently finishing Undergraduate and during my free time, I try to acquire more knowledge one Web development</p>
-    </section> -->
+        </div>
+    </section>
 
-
-
-
-
-    <!-- <a id="profile-link" target="_blank" href="https://github.com/tahsinAmin">Click to veiw my Github account</a> -->
+    <footer>
+        <div class="profile-links">
+            <a href="https://www.linkedin.com/in/tahsin-amin-157aa1160/" class="active" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="https://github.com/tahsinAmin" class="active" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.facebook.com/tahsinamins" class="active" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://codepen.io/tahsin09" class="active" target="_blank"><i class="fab fa-codepen fa-3x"></i></a>
+        </div>
+    </footer>
+    <p class="copy">Copyright © by Muhammad Tahsin </p>
     <script src="j.js"></script>
-  </body>
+</body>
 </html>

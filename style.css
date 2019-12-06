@@ -1,0 +1,402 @@
+/* The name "projects" have to much space */
+/*Need to give credit to Ben Brophy for footer part*/
+/* now, i have 2 id's with profile links */
+* {
+    box-sizing: border-box;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    overflow-x:hidden;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+  position: relative;
+  display: block;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #c59f87;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+/*   background: black; */
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
+li{
+  list-style: none;
+  padding-left: 35px;
+}
+
+li:nth-last-child(1){
+  padding-right: 30px;
+}
+
+li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.profile-links {
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.link-words{
+  border-bottom: 1px solid #c59f87;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+}
+
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+#welcome-section{
+  height: 500px;
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2012/08/27/14/19/evening-55067_1280.png');
+  background-size: cover;
+}
+
+.tahsin {
+    margin: 0;
+}
+
+.fa, .far, .fas {
+    margin-left: 10px;
+}
+
+h1{
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+  letter-spacing: 4.5px;
+}
+
+h2{
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 70px;
+}
+
+h3{
+  font-family: 'Comfortaa', cursive;
+  font-size: 37px;
+  letter-spacing: 4px;
+}
+
+h4{
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+}
+
+.grid-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(100px, auto));
+}
+
+.grid-container div {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 1400px;
+    grid-gap: 60px;
+    grid-template-areas:
+        "picture"
+        "cont";
+}
+
+.img {
+    height: 300px;
+    min-width: 320px;
+    max-width: 540px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+    grid-area: picture;
+}
+
+.a{  background-image: url(tribute.jpg);        }
+.b{  background-image: url(survey.jpg);         }
+.c{  background-image: url(product.jpg);        }
+.d{  background-image: url(technical-doc.jpg);  }
+
+.project-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    grid-area: cont;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 37px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, p {
+    color: #c59f87;
+}
+
+.orange {
+    color: #ffe398;
+    margin-top: 0;
+}
+
+.btn {
+    background-color: black;
+    color: #ffe398;
+    height: 60px;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1.3px;
+    border-radius: 7px;
+    border: 1px solid #c59f87;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ffe398;
+    color: black;
+    border: none;
+    transform: translateY(-10px);
+}
+
+.clearFix {
+    clear: both;
+}
+
+.line{
+    float: right;
+    height: 10px;
+    background-color: #c59f87;
+    width: 93%;
+    position: relative;
+    top: 20px;
+
+}
+
+.container-2a{
+    max-width: 1020px;
+    /* margin: 0 auto; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px
+}
+
+.bigNav {
+    display: none;
+}
+
+.copy {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+@media screen and (min-width: 540px) {
+    .container {
+        grid-template-columns: 4fr 6fr;
+        max-width: 1400px;
+        grid-gap: 60px;
+        grid-template-areas:
+            "picture cont";
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .bigNav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bigNav a {
+        color: #c59f87;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .image {
+        height: 400px;
+        width: auto;
+    }
+
+    .container-2a{
+        max-width: 1020px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .info img {
+        float: left;
+        margin-right: 40px;
+        height: 300px;
+    }
+
+    .info {
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .info p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .profile-links {
+        padding-top: 8px;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    #welcome-section{
+      height: 300px;
+    }
+
+    .line{
+      height: 5px;
+      width: 80%;
+    }
+
+    .fa, .far, .fas {
+        font-size: 40px;
+    }
+
+    .fab {
+        font-size: 25px;
+    }
+
+    .fcc {
+        height: 30px;
+        width: 40px;
+    }
+
+    .container {
+        grid-gap: 20px;
+    }
+
+    .img {
+        height: 300px;
+        min-width: 320px;
+        max-width: 540px;
+    }
+
+    .grid-container {
+        grid-row-gap: 40px;
+    }
+
+    .grid-container div {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        height: 40px;
+        width: 150px;
+        font-size: 17px;
+        letter-spacing: 1.3px;
+    }
+}
