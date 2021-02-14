@@ -157,10 +157,10 @@ h4{
     grid-area: picture;
 }
 
-.a{  background-image: url(tribute.jpg);        }
-.b{  background-image: url(survey.jpg);         }
-.c{  background-image: url(product.jpg);        }
-.d{  background-image: url(technical-doc.jpg);  }
+.a{  background-image: url(tribute.JPG);        }
+.b{  background-image: url(survey.JPG);         }
+.c{  background-image: url(product.JPG);        }
+.d{  background-image: url(technical-doc.JPG);  }
 
 .project-title{
     margin-top: 0;
@@ -300,6 +300,7 @@ h1, h2, h3, h4, p {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
     }
 
     .info img {
