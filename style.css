@@ -157,11 +157,11 @@ h4{
     grid-area: picture;
 }
 
-.a{  background-image: url(random.png);        }
-.b{  background-image: url(tribute.JPG);        }
-.c{  background-image: url(survey.JPG);         }
-.d{  background-image: url(product.JPG);        }
-.e{  background-image: url(technical-doc.JPG);  }
+.a {  background-image: url(random.jpg);         }
+.b {  background-image: url(tribute.JPG);        }
+.c {  background-image: url(survey.JPG);         }
+.d {  background-image: url(product.JPG);        }
+.e {  background-image: url(technical-doc.JPG);  }
 
 .project-title{
     margin-top: 0;
