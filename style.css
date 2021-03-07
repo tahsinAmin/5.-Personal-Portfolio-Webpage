@@ -157,7 +157,7 @@ h4{
     grid-area: picture;
 }
 
-.a {  background-image: url(random.jpg);         }
+.a {  background-image: url(random.JPG);         }
 .b {  background-image: url(tribute.JPG);        }
 .c {  background-image: url(survey.JPG);         }
 .d {  background-image: url(product.JPG);        }
