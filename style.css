@@ -264,6 +264,11 @@ h1, h2, h3, h4, p {
     font-size: 12px;
 }
 
+.xd{
+    height: 116px;
+    padding-top: 10px;
+}
+
 
 
 @media screen and (min-width: 540px) {
@@ -401,7 +406,6 @@ h1, h2, h3, h4, p {
 
     .container {
         grid-gap: 20px;
-        margin:
     }
 
     img {
@@ -424,5 +428,10 @@ h1, h2, h3, h4, p {
         width: 150px;
         font-size: 17px;
         letter-spacing: 1.3px;
+    }
+
+    .xd{
+        height: 58px;
+        padding-top: 10px;
     }
 }
