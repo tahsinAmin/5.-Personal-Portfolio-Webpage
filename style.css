@@ -270,6 +270,7 @@ h1, h2, h3, h4, p {
 }
 
 .load-more{
+    cursor: pointer;
     background-color: #ffe398;
     color: black;
     height: 60px;
