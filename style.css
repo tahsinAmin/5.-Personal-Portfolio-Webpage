@@ -269,7 +269,19 @@ h1, h2, h3, h4, p {
     padding-top: 10px;
 }
 
-
+.load-more{
+    background-color: #ffe398;
+    color: black;
+    height: 60px;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1.3px;
+    border-radius: 7px;
+    border: 1px solid #c59f87;
+    transition: all 0.3s ease 0s;
+    margin: 0 auto;
+  }
 
 @media screen and (min-width: 540px) {
     .container {
@@ -373,7 +385,7 @@ h1, h2, h3, h4, p {
         font-size: 17px;
     }
 
-    .grid-container div {
+    #grid-container div {
         margin-bottom: 35px;
     }
 
@@ -415,11 +427,11 @@ h1, h2, h3, h4, p {
         margin-bottom: 10px;
     }
 
-    .grid-container {
+    #grid-container {
         grid-row-gap: 40px;
     }
 
-    .grid-container div {
+    #grid-container div {
         margin-bottom: 0;
     }
 

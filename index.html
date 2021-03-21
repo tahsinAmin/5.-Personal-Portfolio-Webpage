@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Acme|Comfortaa|Righteous&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1b49d7e787.js"></script>
-
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -29,58 +33,9 @@
     <section id="projects">
         <div><span><i class="fas fa-bolt fa-4x" style="color: #c59f87;"></i></span><div class="line"></div></div>
         <h2>PROJECTS</h2>
-        <div class="grid-container">
+        <div id="grid-container">
 
-            <div class="container">
-                <div class="img a"></div>
-                <div class="content">
-                    <h3 class="project-tile">Random Quote Generator</h3>
-                    <h4 class="orange">freeCodeCamp</h4>
-                    <p>Web stack: CSS, HTML, React. </p>
-                    <a href="https://codepen.io/tahsin09/full/rNWWqYq" target="_blank" class="project-tile"><button class="btn">View Project</button></a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="img b"></div>
-                <div class="content">
-                    <h3 class="project-tile">Tribute Page</h3>
-                    <h4 class="orange">freeCodeCamp</h4>
-                    <p>A short story on A. P. J Abdul Kalam. Information retrieved from Wikipedia.</p>
-                    <a href="https://codepen.io/tahsin09/full/ZVRYBG" target="_blank" class="project-tile"><button class="btn">View Project</button></a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="img c"></div>
-                <div class="content">
-                    <h3 class="project-tile">Survey Form</h3>
-                    <h4 class="orange">freeCodeCamp</h4>
-                    <p> A survey form Design for the "Responsive Web Design" Project.</p>
-                    <a href="https://codepen.io/tahsin09/full/VqVYmw" target="_blank" class="project-tile"><button class="btn ">View Project</button></a>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="img d"></div>
-                <div class="content">
-                    <h3 class="project-tile"> Product Landing Page</h3>
-                    <h4 class="orange">freeCodeCamp</h4>
-                    <p>A Product Landing Page for HP SpectreX360.</p>
-                    <a href="https://codepen.io/tahsin09/full/axXKJo" target="_blank" class="project-tile"><button class="btn">View Project</button></a>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="img e"></div>
-                <div class="content">
-                    <h3 class="project-tile">Technical Documentation Page</h3>
-                    <h4 class="orange">freeCodeCamp</h4>
-                    <p> A replication of CodeCademy.</p>
-                    <a href="https://codepen.io/tahsin09/full/zXLWOm" target="_blank" class="project-tile"><button class="btn">View Project</button></a>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -123,6 +78,92 @@
     </footer>
     <p class="copy">Copyright © by Muhammad Tahsin </p>
     <p class="copy">Last Updated: January 2021 </p>
+
+    <script type="text/babel">
+        class GridContainer extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.state = {
+                    items: [
+                        {
+                            "id":1,
+                            "title":"Random Quote Generator",
+                            "org":"freeCodeCamp",
+                            "stack":"Web stack: CSS, HTML, React.",
+                            "url":"https://codepen.io/tahsin09/full/rNWWqYq",
+                            "tag":"a"
+                        },
+                        {
+                            "id":2,
+                            "title":"Tribute Page",
+                            "org":"freeCodeCamp",
+                            "stack":"A short story on A. P. J Abdul Kalam. Information retrieved from Wikipedia..",
+                            "url":"https://codepen.io/tahsin09/full/ZVRYBG",
+                            "tag":"b"
+                        },{
+                            "id":3,
+                            "title":"Survey Form",
+                            "org":"freeCodeCamp",
+                            "stack":"A survey form Design for the RESPONSIVE WEB DESIGN Project.",
+                            "url":"https://codepen.io/tahsin09/full/VqVYmw",
+                            "tag":"c"
+                        },{
+                            "id":4,
+                            "title":"Product Landing Page",
+                            "org":"freeCodeCamp",
+                            "stack":"A Product Landing Page of HP SpectreX360.",
+                            "url":"https://codepen.io/tahsin09/full/axXKJo",
+                            "tag":"d"
+                        },{
+                            "id":5,
+                            "title":"Technical Documentation Page",
+                            "org":"freeCodeCamp",
+                            "stack":"A replication of CodeCademy.",
+                            "url":"https://codepen.io/tahsin09/full/zXLWOm",
+                            "tag":"e"
+                        }
+                    ],
+                    visible: 3,
+                    error: false
+                };
+            }
+
+            loadMore = () => {
+                this.setState((prev) => {
+                return {visible: prev.visible + 4};
+                });
+            }
+
+            render() {
+                const { items, visible } = this.state;
+                const itemsList = items.slice(0, visible).map((item, index) => {
+                        return (
+                            <div className="container tile fade-in" key={item.id}>
+                                <div className={`img ${item.tag}`}></div>
+                                <div className="content">
+                                        <h3 className="project-tile">{item.title}</h3>
+                                        <h4 className="orange">{item.org}</h4>
+                                        <p>{item.stack}</p>
+                                    <a href={item.url} target="_blank" className="project-tile"><button className="btn">View Project</button></a>
+                                </div>
+                            </div>                  
+                        );
+                        });
+                const loadMore = visible < items.length && <center><button onClick={this.loadMore} type="button" className="load-more">Load more</button></center>;
+                    
+                return (
+                <div className="grid-container">
+                    <div className="tiles">{ itemsList }</div>
+                    <br/>
+                    { loadMore }
+                </div>
+                );
+            }
+        }
+
+        ReactDOM.render(<GridContainer />, document.getElementById('grid-container'));
+    </script>
     <script src="j.js"></script>
 </body>
 </html>
