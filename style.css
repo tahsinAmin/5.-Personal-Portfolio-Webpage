@@ -66,6 +66,7 @@ li a{
     background-color: inherit;
     padding: 10px 0 10px 0;
     margin-bottom: 50px;
+    z-index: 1;
 }
 
 #navbar a {
