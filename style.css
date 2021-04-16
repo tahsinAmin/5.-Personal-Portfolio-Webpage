@@ -8,6 +8,23 @@ body, html {
     overflow-x:hidden;
 }
 
+/* Custom Scrollbar. Inspired from https://codepen.io/denic/pen/NWrZmwV by Marko */
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000;
+  } 
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: transparent;
+  } 
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+
 /* Style the active link (or home/logo) */
 .active {
   color: white;
